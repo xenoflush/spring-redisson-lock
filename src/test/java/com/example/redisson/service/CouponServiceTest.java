@@ -29,7 +29,7 @@ class CouponServiceTest {
         couponService.setUsableCoupon(this.couponKey, quantity);
     }
 
-    //락사용함_회원_50명_쿠폰_사용
+    //락사용함_회원_80명_쿠폰_사용
     @Test
     @Order(1)
     void lockUse() throws InterruptedException{
@@ -45,7 +45,7 @@ class CouponServiceTest {
         countDownLatch.await();
     }
 
-    //락사용안함_회원_50명_쿠폰_사용
+    //락사용안함_회원_80명_쿠폰_사용
     @Test
     @Order(2)
     void lockNotUse() {
